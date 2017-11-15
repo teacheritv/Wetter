@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="R.Jasper-Loreck">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WetterAPP</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+    <script src="wetter.js" async></script>
+</head>
+
+<body>
+    <div class="container" align="center">
+        <h1 class="text-center">Wetter</h1>
+        <form>
+            <input type="text" class="form-control text-center" id="ort" placeholder="Ort eingeben" />
+            <br>
+            <button type="button" class="btn btn-default center" id="ortbtn" onclick="ladeWetter('ort')">OK</button>
+        </form>
+        <br>
+        <h4>Aktuelles Wetter in</h4>
+        <h4 class="ort" id=ortAusgabe></h4>
+        <h4 class="aktWetter" id=aktWetter></h4>
+        <br>
+        <h4>Temperatur in °C</h4>
+        <h4 class="temp" id=temp></h4>
+        <br>
+        <h4>Luftdruck</h4>
+        <h4 class="druck" id=druck></h4>
+        <br>
+        <h4>Luftfeuchtigkeit in %</h4>
+        <h4 class="luftfeuchte" id=luftfeuchte></h4>
+    </div>
+</body>
+</html> 
